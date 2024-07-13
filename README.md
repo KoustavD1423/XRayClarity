@@ -167,6 +167,10 @@
 > |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/res_cam.jpg)|![dense_cam](./assets/dense_cam.jpg)|
 > |:-:|:-:|:-:|:-:|
 > |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_</sup>|<sup>_ResNet-18_</sup>|<sup>_DenseNet-121_</sup>|
+>
+> > |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/res_cam.jpg)|![dense_cam](./assets/dense_cam.jpg)|
+> |:-:|:-:|:-:|:-:|
+> |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_</sup>|<sup>_ResNet-18_</sup>|<sup>_DenseNet-121_</sup>|
 
 ## Usage
 > - Clone the repository
