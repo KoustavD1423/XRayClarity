@@ -49,9 +49,9 @@
 >    5. [Plot running losses & accuracies](./plot_utils.py#L8-L42)
 >       - |Model|Summary Plot|
 >         |:-:|:-:|
->         |VGG-16|![vgg_plot](./outputs/summary_plots/vgg.png)|
->         |ResNet-18|![res_plot](./outputs/summary_plots/resnet.png)|
->         |DenseNet-121|![dense_plot](./outputs/summary_plots/densenet.png)|
+>         |VGG-16|![vgg_plot](./assets/vgg_plot.png)|
+>         |ResNet-18|![res_plot](./assets/resnet_plot.png)|
+>         |DenseNet-121|![dense_plot](./assets/densenet_plot.png)|
 > 4. [Results Evaluation](./3_evaluate_results.ipynb "3_evaluate_results.ipynb")
 >    1. [Plot confusion matrices](./plot_utils.py#L45-L69)
 >    2. [Compute test-set Accuracy, Precision, Recall & F1-score](./utils.py#L64-L80)
@@ -147,17 +147,17 @@
 <td>Confusion Matrices</td>
 <td>
 
-![vgg_confmat](./assets/vgg_confmat.png)
+![vgg_confmat](./assets/vgg.png)
 
 </td>
 <td>
 
-![res_confmat](./assets/res_confmat.png)
+![res_confmat](./assets/resnet.png)
 
 </td>
 <td>
 
-![dense_confmat](./assets/dense_confmat.png)
+![dense_confmat](./assets/densenet.png)
 
 </td>
 </tr>
