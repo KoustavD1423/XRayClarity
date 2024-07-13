@@ -1,4 +1,4 @@
-# Classification and Gradient-based Localization of Chest Radiographs
+# XRayClarity: Classification and Gradient-based Localization of Chest Radiographs
 
 ![cover](./assets/cover.png)
 
@@ -9,7 +9,7 @@
 - **Grad-CAM Localization** ![badge](https://img.shields.io/badge/Grad--CAM--Localization-Complete-green)
 - **Documentation** ![badge](https://img.shields.io/badge/Documentation-Complete-green)
 - **Inference Script** ![badge](https://img.shields.io/badge/Inference--Script-Complete-green)
-  
+
 ## Contents
 - [Introduction](#introduction)
 - [Overview](#overview)
@@ -25,12 +25,11 @@
 > This project aims to make the former study a reality while dealing with the intricacies in the latter, with the help of Deep Learning.<br>
 
 ## Overview
-> The project uses the COVID-19 Radiography Database [[3]](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) as it's dataset.
+> The project uses the COVID-19 Radiography Database [[3]](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) as its dataset.
 > It has a total of `21165` Chest X-Rays (CXRs) belonging to 4 different classes (`COVID-19`, `Lung Opacity`, `Normal` and `Viral Pneumonia`).<br>
-> Three top scoring CNN architectures, __VGG-16__ [[4]](https://arxiv.org/abs/1409.1556 "Very Deep Convolutional Networks for Large-Scale Image Recognition"), __ResNet-18__ [[5]](https://arxiv.org/abs/1409.1556 "Deep Residual Learning for Image Recognition
-") and __DenseNet-121__ [[6]](https://arxiv.org/abs/1608.06993 "Densely Connected Convolutional Networks"), trained on the ImageNet Dataset [[7]](http://image-net.org/), were chosen for __fine-tuning__ on the dataset.<br>
-> The results obtained from the different architectures were then evaluted and compared.<br>
-> Finally, with the help of __Gradient weighted Class Activation Maps__ (Grad-CAM) [[8]](https://arxiv.org/abs/1610.02391 "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization") the affected areas in CXRs were localized.<br>
+> Three top-scoring CNN architectures, __VGG-16__ [[4]](https://arxiv.org/abs/1409.1556 "Very Deep Convolutional Networks for Large-Scale Image Recognition"), __ResNet-18__ [[5]](https://arxiv.org/abs/1409.1556 "Deep Residual Learning for Image Recognition") and __DenseNet-121__ [[6]](https://arxiv.org/abs/1608.06993 "Densely Connected Convolutional Networks"), trained on the ImageNet Dataset [[7]](http://image-net.org/), were chosen for __fine-tuning__ on the dataset.<br>
+> The results obtained from the different architectures were then evaluated and compared.<br>
+> Finally, with the help of __Gradient-weighted Class Activation Maps__ (Grad-CAM) [[8]](https://arxiv.org/abs/1610.02391 "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization") the affected areas in CXRs were localized.<br>
 
 * ___Note:___ The dataset and the trained models can be found in [here](https://drive.google.com/drive/folders/14L8wd-d2a3lvgqQtwV-y53Gsnn6Ud2-w?usp=sharing).<br>
 
@@ -176,7 +175,9 @@
 > |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camnewnorm.jpg)|![res_cam](./assets/resnet18_camnewnorm.jpg)|![dense_cam](./assets/densnet121_camnewnorm.jpg)|
 > |:-:|:-:|:-:|:-:|
 > |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_normal_</sup>|<sup>_ResNet-18_normal_</sup>|<sup>_DenseNet-121_normal_</sup>|
-> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/resnet18_camcovid.jpg)|![dense_cam](./assets/densenet121_camcovid.jpg)|
+> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/resnet18_camcovid.jpg)|![dense_cam](./assets/densen
+
+et121_camcovid.jpg)|
 > |:-:|:-:|:-:|:-:|
 > |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_infected_</sup>|<sup>_ResNet-18_infected_</sup>|<sup>_DenseNet-121_infected_</sup>|
 
@@ -222,7 +223,6 @@
 > GradCAM generated for label "covid_19".
 > GradCAM masked image saved to "./assets/res_cam.jpg".
 > ```
->
 
 ## Future Scope of Improvement
 
@@ -256,6 +256,7 @@
 10. **Collaboration with Radiologists**:
     - Collaborate closely with radiologists to validate the model's predictions and gain insights for further improvements based on their expert feedback.
 
+
 ## Why This Project is Revolutionary
 
 1. **Rapid Diagnosis**:
@@ -284,7 +285,7 @@
 
 9. **Research and Development**:
    - Contributes valuable insights and methodologies to the growing field of AI in healthcare, encouraging further research and innovation.
-
+  
 ## Conclusions
 > - DenseNet-121 having only `7.98 Million` parameters did relatively better than VGG-16 and ResNet-18, with `138 Million` and `11.17 Million` parameters respectively.
 > - Increase in model's parameter count doesn’t necessarily achieve better results, but increase in residual connections might.
