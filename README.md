@@ -164,12 +164,12 @@
 </table>
 
 - __Localization with Gradient-based Class Activation Maps__
-> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/res_cam.jpg)|![dense_cam](./assets/dense_cam.jpg)|
+> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camnewnorm.jpg)|![res_cam](./assets/res_cam.jpg)|![dense_cam](./assets/densnet121_camnewnorm.jpg)|
 > |:-:|:-:|:-:|:-:|
-> |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_</sup>|<sup>_ResNet-18_</sup>|<sup>_DenseNet-121_</sup>|
-> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/res_cam.jpg)|![dense_cam](./assets/dense_cam.jpg)|
+> |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_normal_</sup>|<sup>_ResNet-18_normal_</sup>|<sup>_DenseNet-121_normal_</sup>|
+> |![original](./assets/original.jpg)|![vgg_cam](./assets/vgg16_camcovid.jpg)|![res_cam](./assets/resnet18_camcovid.jpg)|![dense_cam](./assets/densenet121_camcovid.jpg)|
 > |:-:|:-:|:-:|:-:|
-> |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_</sup>|<sup>_ResNet-18_</sup>|<sup>_DenseNet-121_</sup>|
+> |<sup>_COVID-19 infected CXR_</sup>|<sup>_VGG-16_infected_</sup>|<sup>_ResNet-18_infected_</sup>|<sup>_DenseNet-121_infected_</sup>|
 
 ## Usage
 > - Clone the repository
