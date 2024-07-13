@@ -1,6 +1,15 @@
 # Classification and Gradient-based Localization of Chest Radiographs
 
 ![cover](./assets/cover.png)
+
+## Badges
+- **Dataset Preparation** ![badge](https://img.shields.io/badge/Dataset--Preparation-Complete-green)
+- **Model Fine-tuning** ![badge](https://img.shields.io/badge/Model--Fine--tuning-Complete-green)
+- **Evaluation** ![badge](https://img.shields.io/badge/Evaluation-Complete-green)
+- **Grad-CAM Localization** ![badge](https://img.shields.io/badge/Grad--CAM--Localization-Complete-green)
+- **Documentation** ![badge](https://img.shields.io/badge/Documentation-Complete-green)
+- **Inference Script** ![badge](https://img.shields.io/badge/Inference--Script-Complete-green)
+  
 ## Contents
 - [Introduction](#introduction)
 - [Overview](#overview)
@@ -213,6 +222,68 @@
 > GradCAM generated for label "covid_19".
 > GradCAM masked image saved to "./assets/res_cam.jpg".
 > ```
+>
+
+## Future Scope of Improvement
+
+1. **Larger Dataset Collection**:
+   - Increase the diversity and volume of the dataset by including more CXRs from different sources and regions to improve generalizability and robustness.
+
+2. **Data Augmentation Techniques**:
+   - Implement advanced data augmentation techniques to artificially expand the training dataset and reduce overfitting.
+
+3. **Ensemble Learning**:
+   - Combine the predictions of multiple models to enhance the overall performance and reduce the variance of the predictions.
+
+4. **Hyperparameter Optimization**:
+   - Use techniques like Grid Search or Random Search to find the optimal set of hyperparameters for each model to improve accuracy further.
+
+5. **Model Architecture Exploration**:
+   - Experiment with other state-of-the-art architectures and custom architectures designed specifically for medical imaging.
+
+6. **Explainability and Interpretability**:
+   - Integrate more explainability techniques alongside Grad-CAM to make the model’s decision process more transparent and understandable to radiologists.
+
+7. **Cross-validation**:
+   - Implement k-fold cross-validation to ensure the model’s performance is consistent and reliable across different subsets of the data.
+
+8. **Deployment and Integration**:
+   - Develop a user-friendly web or mobile application for real-time CXR classification and localization that can be used by healthcare professionals in clinical settings.
+
+9. **Multi-modal Learning**:
+   - Integrate clinical data (like patient history, symptoms, etc.) with image data to create a multi-modal model that provides more accurate and comprehensive diagnoses.
+
+10. **Collaboration with Radiologists**:
+    - Collaborate closely with radiologists to validate the model's predictions and gain insights for further improvements based on their expert feedback.
+
+## Why This Project is Revolutionary
+
+1. **Rapid Diagnosis**:
+   - The project enables quick and accurate diagnosis of COVID-19 and other lung pathologies from chest radiographs, which is critical in areas with limited access to RT-PCR testing.
+
+2. **Cost-Effective**:
+   - Utilizing chest X-rays, which are widely available and inexpensive, makes it accessible for widespread use, especially in low-resource settings.
+
+3. **Enhanced Radiologist Efficiency**:
+   - Assists radiologists by automating the initial screening process, allowing them to focus on more complex cases and reduce their workload.
+
+4. **Improved Accuracy**:
+   - Fine-tuning state-of-the-art CNN architectures on a specialized dataset enhances diagnostic accuracy, potentially reducing misdiagnosis.
+
+5. **Explainability with Grad-CAM**:
+   - Provides visual explanations for the model’s predictions, helping clinicians understand and trust the AI system’s decisions.
+
+6. **Scalability**:
+   - The approach can be extended to diagnose other diseases from different types of medical images, making it a versatile tool in the medical imaging domain.
+
+7. **Empowerment of Remote Areas**:
+   - Enables remote and underserved regions to perform reliable diagnoses, bridging the gap in healthcare disparities.
+
+8. **Innovation in Medical Imaging**:
+   - Combines cutting-edge deep learning techniques with practical medical applications, pushing the boundaries of what’s possible in medical imaging.
+
+9. **Research and Development**:
+   - Contributes valuable insights and methodologies to the growing field of AI in healthcare, encouraging further research and innovation.
 
 ## Conclusions
 > - DenseNet-121 having only `7.98 Million` parameters did relatively better than VGG-16 and ResNet-18, with `138 Million` and `11.17 Million` parameters respectively.
